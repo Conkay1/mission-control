@@ -1,27 +1,30 @@
 ---
 project: CMIT
 status: STALE
-last_updated: 2026-04-21
+priority: low
+last_updated: 2026-04-22
 owner: Connor Kay
+tags: [study, certification]
 ---
 
 ## Current Status
-**STALE** — Project folder exists but no active tasks or recent activity logged. Needs definition.
+**STALE** — CMIT certification prep project. A 14-day prep course document exists in the Education folder but no study sessions have been logged yet.
 
 ## Last Activity
-None logged.
+- 2026-03-28: `CMIT_14Day_Prep_Course.docx` last modified in `~/Documents/Claude/Projects/CMIT/Education/`
 
 ## Current Focus
-Not yet defined.
+CMIT certification exam preparation using the 14-day study plan.
 
 ## Blocked Items
-- [ ] Define current objectives and scope for CMIT project
+- None.
 
 ## Next Suggested Action
-Add a brief description of what CMIT involves so Mission Control can track it properly.
+Open `CMIT_14Day_Prep_Course.docx` and begin Day 1 of the prep course; log progress here after each session.
 
 ## Cadence Log
-No activity logged yet.
+No study sessions logged yet.
 
 ## Notes
-- Folder exists under ~/Documents/Claude/Projects/CMIT
+- Resource: `~/Documents/Claude/Projects/CMIT/Education/CMIT_14Day_Prep_Course.docx`
+- No-activity days since initial setup: 1 (as of 2026-04-22)
