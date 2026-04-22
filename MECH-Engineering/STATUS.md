@@ -1,7 +1,7 @@
 ---
 project: MECH Engineering
 status: ACTIVE
-last_updated: 2026-04-21
+last_updated: 2026-04-22
 owner: Connor Kay
 ---
 
@@ -26,6 +26,9 @@ Continue Khan Academy Algebra 1 — next up: Lesson 6 (as indicated by Khan Acad
 |------|--------|-------|-------|-------|
 | 2026-04-19 | Module 00 | Linear expressions/equations | 1.0 | 1-week streak |
 | 2026-04-14 | Module 00 | Distributive property | 1.0 | 5/5 quiz |
+| 2026-04-20 | — | — | 0 | No activity |
+| 2026-04-21 | — | — | 0 | No activity |
+| 2026-04-22 | — | — | 0 | No activity |
 
 ## Program Progress
 - **Total Hours Logged:** 2
@@ -37,3 +40,5 @@ Continue Khan Academy Algebra 1 — next up: Lesson 6 (as indicated by Khan Acad
 - Daily 7 AM tutor briefing active in Dispatch
 - Stewart Calculus textbook purchased — ready for Module 01
 - Fuzzy items: none currently logged
+- **No-activity days (since last session):** 3 (2026-04-20, 2026-04-21, 2026-04-22) — streak broken
+- **⚠ 7-day rolling total (2026-04-15 – 2026-04-22): 1.0 hr — below 5 hr weekly target**
