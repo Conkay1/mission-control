@@ -1,7 +1,7 @@
 ---
 project: Messaging Automation
 status: STALE
-last_updated: 2026-04-21
+last_updated: 2026-04-22
 owner: Connor Kay
 ---
 
@@ -26,3 +26,4 @@ No activity logged yet.
 
 ## Notes
 - Project space created in Dispatch but no agent tasks have run under it
+- No-activity days since last update: 1
