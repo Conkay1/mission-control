@@ -16,7 +16,7 @@
   .alerts { background: #1e1220; border-left: 3px solid #ef4444; margin: 16px; border-radius: 8px; padding: 14px 16px; }
   .alerts h2 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #ef4444; margin-bottom: 10px; }
   .alert-item { font-size: 13px; color: #fca5a5; padding: 4px 0; display: flex; align-items: flex-start; gap: 8px; }
-  .alert-item::before { content: '⚠'; flex-shrink: 0; }
+  .alert-item::before { content: 'X'; flex-shrink: 0; }
 
   .workload { background: #111827; border: 1px solid #1f2937; margin: 0 16px 16px; border-radius: 8px; padding: 14px 16px; }
   .workload h2 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #6366f1; margin-bottom: 12px; }
@@ -51,9 +51,9 @@
   .blocked-list { margin-top: 8px; }
   .blocked-list h4 { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: #ef4444; margin-bottom: 6px; }
   .blocked-item { font-size: 12px; color: #fca5a5; padding: 3px 0; display: flex; gap: 6px; }
-  .blocked-item::before { content: '●'; font-size: 8px; margin-top: 3px; flex-shrink: 0; }
+  .blocked-item::before { content: 'o'; font-size: 8px; margin-top: 3px; flex-shrink: 0; }
 
-  .card-meta { display: flex; justify-content: space-between; margin-top: 10px; padding-top: 10px; border-top: 1px solid #1f2937; }
+  .card-meta { display: flex; justify-content: space-between; margin-top: 10px; padding-top: 10px; border-top: 1px solid #1f2937; flex-wrap: wrap; gap: 6px; }
   .meta-item { font-size: 11px; color: #475569; }
   .meta-item span { color: #64748b; display: block; font-size: 10px; }
 
@@ -73,32 +73,32 @@
 
 <header>
   <h1>Mission <span>Control</span></h1>
-  <div class="updated" id="updated-time">Updated: 2026-04-21 6:15 AM</div>
+  <div class="updated">Updated: 2026-04-21 6:15 AM</div>
 </header>
 
 <!-- ALERTS -->
 <div class="alerts" id="alerts-section">
-  <h2>🚨 Needs Attention</h2>
-  <div class="alert-item">HSA Vault — server restart required to complete backend verification</div>
-  <div class="alert-item">Messaging Automation — no scope defined, project is undefined</div>
+  <h2>Needs Attention</h2>
+  <div class="alert-item">HSA Vault — server restart required to complete backend verification (blocked 2 days)</div>
+  <div class="alert-item">Messaging Automation — no scope defined, project undefined</div>
   <div class="alert-item">CMIT — no activity or objectives logged</div>
   <div class="alert-item">Doc Comparison — no activity or objectives logged</div>
 </div>
 
 <!-- TODAY'S WORKLOAD -->
 <div class="workload">
-  <h2>📋 Suggested Workload Today</h2>
+  <h2>Suggested Workload Today</h2>
   <div class="workload-item">
     <span class="priority p-high">High</span>
-    <span>Restart HSA Vault server → run <code style="background:#1f2937;padding:2px 5px;border-radius:3px;font-size:11px">python3.11 run.py</code> in finance-app</span>
+    <span>Restart HSA Vault server — run <code style="background:#1f2937;padding:2px 5px;border-radius:3px;font-size:11px">python3.11 run.py</code> in finance-app dir</span>
   </div>
   <div class="workload-item">
     <span class="priority p-high">High</span>
-    <span>MECH Engineering — 1 hour study session (Khan Academy Lesson 6)</span>
+    <span>MECH Engineering — 1 hr study session, Khan Academy Lesson 6 (variables on both sides)</span>
   </div>
   <div class="workload-item">
     <span class="priority p-med">Med</span>
-    <span>Define scope for Messaging Automation project</span>
+    <span>Define scope for Messaging Automation project (platforms + workflows)</span>
   </div>
   <div class="workload-item">
     <span class="priority p-low">Low</span>
@@ -116,15 +116,15 @@
       <div class="project-name">HSA Vault</div>
       <div class="status-badge badge-blocked">Blocked</div>
     </div>
-    <div class="card-focus">Security hardening &amp; debugging — XSS patch complete, backend fix verification pending server restart.</div>
+    <div class="card-focus">Security hardening and debugging — XSS patch confirmed working, backend fix verification pending server restart.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Restart server with <code style="background:#2e2b6e;padding:1px 4px;border-radius:3px">python3.11 run.py</code> in finance-app directory, then resume debugging session.
+      Run <code style="background:#2e2b6e;padding:1px 4px;border-radius:3px">python3.11 run.py</code> in finance-app directory to restart server, then resume debugging to verify backend fixes live.
     </div>
     <div class="blocked-list">
       <h4>Blocked On</h4>
       <div class="blocked-item">Server restart required to verify backend fixes</div>
-      <div class="blocked-item">Backend fix verification pending</div>
+      <div class="blocked-item">Backend fix verification pending restart</div>
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Last Activity</span>2026-04-19</div>
@@ -138,26 +138,27 @@
       <div class="project-name">MECH Engineering</div>
       <div class="status-badge badge-active">Active</div>
     </div>
-    <div class="card-focus">Module 00 — College Algebra. Khan Academy Algebra 1 sequence. 2 hours logged, 1-week streak.</div>
+    <div class="card-focus">Module 00 — College Algebra. Khan Academy Algebra 1 sequence. 2 hours logged, 1-week streak maintained.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Khan Academy Lesson 6 — equations with variables on both sides.
+      Khan Academy Lesson 6 — equations with variables on both sides. Target: 1 hr session today.
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Total Hours</span>2 hrs</div>
-      <div class="meta-item"><span>Module</span>00 / 06</div>
+      <div class="meta-item"><span>Module</span>00 of 06</div>
       <div class="meta-item"><span>Last Session</span>2026-04-19</div>
     </div>
     <div style="margin-top:10px;">
-      <div style="font-size:10px;color:#64748b;margin-bottom:4px;">Weekly Activity (last 7 days)</div>
+      <div style="font-size:10px;color:#64748b;margin-bottom:4px;">Sessions logged (Apr 14 – Apr 21)</div>
       <div class="cadence">
-        <div class="dot missed" title="Mon"></div>
-        <div class="dot missed" title="Tue"></div>
-        <div class="dot missed" title="Wed"></div>
-        <div class="dot active" title="Thu"></div>
-        <div class="dot missed" title="Fri"></div>
-        <div class="dot active" title="Sun"></div>
-        <div class="dot missed" title="Mon"></div>
+        <div class="dot active" title="Apr 14 - 1hr"></div>
+        <div class="dot missed" title="Apr 15"></div>
+        <div class="dot missed" title="Apr 16"></div>
+        <div class="dot missed" title="Apr 17"></div>
+        <div class="dot missed" title="Apr 18"></div>
+        <div class="dot active" title="Apr 19 - 1hr"></div>
+        <div class="dot missed" title="Apr 20"></div>
+        <div class="dot missed" title="Apr 21 - today"></div>
       </div>
     </div>
   </div>
@@ -168,7 +169,7 @@
       <div class="project-name">Personal Finance</div>
       <div class="status-badge badge-active">Active</div>
     </div>
-    <div class="card-focus">Daily market briefing running automatically — Dispatch + Email, weekdays 5:30 AM.</div>
+    <div class="card-focus">Daily market briefing running automatically — Dispatch + Email delivery, weekdays 5:30 AM.</div>
     <div class="card-next">
       <strong>Next Action</strong>
       Fully automated — no action needed.
@@ -176,6 +177,7 @@
     <div class="card-meta">
       <div class="meta-item"><span>Schedule</span>Weekdays 5:30 AM</div>
       <div class="meta-item"><span>Delivery</span>Dispatch + Email</div>
+      <div class="meta-item"><span>Task</span>daily-market-briefing</div>
     </div>
   </div>
 
@@ -185,7 +187,7 @@
       <div class="project-name">Email Assistant</div>
       <div class="status-badge badge-active">Active</div>
     </div>
-    <div class="card-focus">Weekly Monday inbox triage — archives bulk, labels action items, produces summary.</div>
+    <div class="card-focus">Weekly Monday inbox triage — archives bulk mail, labels and stars action items, delivers summary to Dispatch.</div>
     <div class="card-next">
       <strong>Next Action</strong>
       Fully automated — next run Monday 8 AM.
@@ -193,6 +195,7 @@
     <div class="card-meta">
       <div class="meta-item"><span>Schedule</span>Mondays 8 AM</div>
       <div class="meta-item"><span>Delivery</span>Dispatch</div>
+      <div class="meta-item"><span>Task</span>weekly-inbox-triage</div>
     </div>
   </div>
 
@@ -202,10 +205,10 @@
       <div class="project-name">Messaging Automation</div>
       <div class="status-badge badge-stale">Stale</div>
     </div>
-    <div class="card-focus">No scope defined. Project exists but no tasks have run.</div>
+    <div class="card-focus">No scope defined. Project space exists but no agent tasks have run and no platforms or workflows identified.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Define what messaging workflows to automate and on which platforms.
+      Define what messaging workflows to automate and on which platforms (Slack, Gmail, iMessage, etc.).
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Last Activity</span>Never</div>
@@ -219,10 +222,10 @@
       <div class="project-name">CMIT</div>
       <div class="status-badge badge-stale">Stale</div>
     </div>
-    <div class="card-focus">No objectives or activity logged. Needs definition.</div>
+    <div class="card-focus">No objectives or activity logged. Folder exists under Projects/CMIT but project needs definition.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Add project goals so Mission Control can track progress.
+      Add a brief description of what CMIT involves so Mission Control can track it properly.
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Last Activity</span>Never</div>
@@ -236,10 +239,10 @@
       <div class="project-name">Doc Comparison</div>
       <div class="status-badge badge-stale">Stale</div>
     </div>
-    <div class="card-focus">No objectives or activity logged. One-time task or ongoing workflow — needs clarification.</div>
+    <div class="card-focus">No objectives or activity logged. Unclear if this is a one-time task or an ongoing workflow.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Clarify scope and whether this is recurring or complete.
+      Clarify scope — what documents need comparison and whether this is recurring or complete.
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Last Activity</span>Never</div>
@@ -250,9 +253,9 @@
 </div>
 
 <div class="footer-bar">
-  <div class="footer-btn active-tab"><div>⚡</div>Overview</div>
-  <div class="footer-btn"><div>📋</div>Projects</div>
-  <div class="footer-btn"><div>🗓</div>Schedule</div>
+  <div class="footer-btn active-tab"><div>*</div>Overview</div>
+  <div class="footer-btn"><div>+</div>Projects</div>
+  <div class="footer-btn"><div>@</div>Schedule</div>
 </div>
 
 </body>
