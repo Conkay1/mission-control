@@ -1,7 +1,7 @@
 ---
 project: HSA Vault
 status: BLOCKED
-last_updated: 2026-04-19
+last_updated: 2026-04-22
 owner: Connor Kay
 ---
 
@@ -29,3 +29,4 @@ Restart the server and resume the debugging task to verify backend fixes live.
 ## Notes
 - Python must be run as `python3.11` (not `python3` — system python is 3.9.6, too old)
 - Debugging session ID: local_6bcc1951-90c8-4374-a508-b3b5f830e54b
+- No activity for 3 days (2026-04-19 → 2026-04-22); still awaiting manual server restart
