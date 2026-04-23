@@ -1,7 +1,7 @@
 ---
 project: Email Assistant
 status: ACTIVE
-last_updated: 2026-04-22
+last_updated: 2026-04-23
 owner: Connor Kay
 ---
 
@@ -27,4 +27,4 @@ No action needed — triage is fully automated. Consider expanding to draft repl
 
 ## Notes
 - Scheduled task: weekly-inbox-triage
-- No manual activity today (expected — automated Mondays only; no-activity days: 1). Next triage: 2026-04-27.
+- No manual activity today (expected — automated Mondays only; no-activity days: 2). Last automated triage: 2026-04-20. Next triage: 2026-04-27.
