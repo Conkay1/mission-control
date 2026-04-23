@@ -73,36 +73,37 @@
 
 <header>
   <h1>Mission <span>Control</span></h1>
-  <div class="updated">Updated: 2026-04-21 6:15 AM</div>
+  <div class="updated">Updated: 2026-04-23 6:15 AM</div>
 </header>
 
 <!-- ALERTS -->
 <div class="alerts" id="alerts-section">
   <h2>Needs Attention</h2>
-  <div class="alert-item">HSA Vault — server restart required to complete backend verification (blocked 2 days)</div>
+  <div class="alert-item">HSA Vault — server restart required to complete backend verification (blocked 4 days)</div>
+  <div class="alert-item">MECH Engineering — streak broken, 4 days missed (Apr 20–23); weekly hours only 1 hr vs 5 hr target</div>
   <div class="alert-item">Messaging Automation — no scope defined, project undefined</div>
-  <div class="alert-item">CMIT — no activity or objectives logged</div>
-  <div class="alert-item">Doc Comparison — no activity or objectives logged</div>
+  <div class="alert-item">CMIT — 14-day prep course available but no study sessions logged yet</div>
+  <div class="alert-item">Doc Comparison — scope undefined; Project Cosmos IFC PDFs in working directory need action plan</div>
 </div>
 
 <!-- TODAY'S WORKLOAD -->
 <div class="workload">
-  <h2>Suggested Workload Today</h2>
+  <h2>Suggested Workload Today — Thursday Apr 23</h2>
   <div class="workload-item">
     <span class="priority p-high">High</span>
-    <span>Restart HSA Vault server — run <code style="background:#1f2937;padding:2px 5px;border-radius:3px;font-size:11px">python3.11 run.py</code> in finance-app dir</span>
+    <span>Restart HSA Vault server — run <code style="background:#1f2937;padding:2px 5px;border-radius:3px;font-size:11px">python3.11 run.py</code> in finance-app dir (4 days blocked)</span>
   </div>
   <div class="workload-item">
     <span class="priority p-high">High</span>
-    <span>MECH Engineering — 1 hr study session, Khan Academy Lesson 6 (variables on both sides)</span>
+    <span>MECH Engineering — 1 hr Khan Academy Lesson 6 (variables on both sides); rebuild streak today</span>
   </div>
   <div class="workload-item">
     <span class="priority p-med">Med</span>
-    <span>Define scope for Messaging Automation project (platforms + workflows)</span>
+    <span>Define Messaging Automation scope — pick one platform and one workflow to start</span>
   </div>
   <div class="workload-item">
     <span class="priority p-low">Low</span>
-    <span>Clarify CMIT and Doc Comparison objectives</span>
+    <span>CMIT — open 14-day prep course and complete Day 1; log progress in STATUS.md</span>
   </div>
 </div>
 
@@ -116,7 +117,7 @@
       <div class="project-name">HSA Vault</div>
       <div class="status-badge badge-blocked">Blocked</div>
     </div>
-    <div class="card-focus">Security hardening and debugging — XSS patch confirmed working, backend fix verification pending server restart.</div>
+    <div class="card-focus">Security hardening and debugging — XSS patch confirmed working, backend fix verification pending server restart. Blocked 4 days.</div>
     <div class="card-next">
       <strong>Next Action</strong>
       Run <code style="background:#2e2b6e;padding:1px 4px;border-radius:3px">python3.11 run.py</code> in finance-app directory to restart server, then resume debugging to verify backend fixes live.
@@ -128,7 +129,7 @@
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Last Activity</span>2026-04-19</div>
-      <div class="meta-item"><span>Days Since Active</span>2 days</div>
+      <div class="meta-item"><span>Days Blocked</span>4 days</div>
     </div>
   </div>
 
@@ -138,18 +139,19 @@
       <div class="project-name">MECH Engineering</div>
       <div class="status-badge badge-active">Active</div>
     </div>
-    <div class="card-focus">Module 00 — College Algebra. Khan Academy Algebra 1 sequence. 2 hours logged, 1-week streak maintained.</div>
+    <div class="card-focus">Module 00 — College Algebra. Khan Academy Algebra 1 sequence. 2 hours logged. Streak broken — 4 consecutive missed days (Apr 20–23). Weekly total: 1 hr vs 5 hr target.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Khan Academy Lesson 6 — equations with variables on both sides. Target: 1 hr session today.
+      Khan Academy Lesson 6 — equations with variables on both sides. Target: 1 hr session today to restart streak.
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Total Hours</span>2 hrs</div>
       <div class="meta-item"><span>Module</span>00 of 06</div>
       <div class="meta-item"><span>Last Session</span>2026-04-19</div>
+      <div class="meta-item"><span>Weekly (Apr 15–23)</span>1 hr / 5 hr target</div>
     </div>
     <div style="margin-top:10px;">
-      <div style="font-size:10px;color:#64748b;margin-bottom:4px;">Sessions logged (Apr 14 – Apr 21)</div>
+      <div style="font-size:10px;color:#64748b;margin-bottom:4px;">Sessions logged (Apr 14 – Apr 23)</div>
       <div class="cadence">
         <div class="dot active" title="Apr 14 - 1hr"></div>
         <div class="dot missed" title="Apr 15"></div>
@@ -158,7 +160,9 @@
         <div class="dot missed" title="Apr 18"></div>
         <div class="dot active" title="Apr 19 - 1hr"></div>
         <div class="dot missed" title="Apr 20"></div>
-        <div class="dot missed" title="Apr 21 - today"></div>
+        <div class="dot missed" title="Apr 21"></div>
+        <div class="dot missed" title="Apr 22"></div>
+        <div class="dot missed" title="Apr 23 - today"></div>
       </div>
     </div>
   </div>
@@ -169,15 +173,15 @@
       <div class="project-name">Personal Finance</div>
       <div class="status-badge badge-active">Active</div>
     </div>
-    <div class="card-focus">Daily market briefing running automatically — Dispatch + Email delivery, weekdays 5:30 AM.</div>
+    <div class="card-focus">Daily market briefing (weekdays 5:30 AM) and nightly STATUS.md auto-sync (10 PM) both running. Briefing for Apr 22 saved as Gmail draft — send manually if not yet done.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Fully automated — no action needed.
+      Open Gmail drafts and send "Market Briefing — April 22, 2026" if not yet sent. Or update briefing task to auto-send.
     </div>
     <div class="card-meta">
-      <div class="meta-item"><span>Schedule</span>Weekdays 5:30 AM</div>
-      <div class="meta-item"><span>Delivery</span>Dispatch + Email</div>
-      <div class="meta-item"><span>Task</span>daily-market-briefing</div>
+      <div class="meta-item"><span>Briefing Schedule</span>Weekdays 5:30 AM</div>
+      <div class="meta-item"><span>Delivery</span>Gmail draft (manual send)</div>
+      <div class="meta-item"><span>Nightly Sync</span>Daily 10 PM</div>
     </div>
   </div>
 
@@ -187,14 +191,14 @@
       <div class="project-name">Email Assistant</div>
       <div class="status-badge badge-active">Active</div>
     </div>
-    <div class="card-focus">Weekly Monday inbox triage — archives bulk mail, labels and stars action items, delivers summary to Dispatch.</div>
+    <div class="card-focus">Weekly Monday inbox triage — archives bulk mail, labels and stars action items, delivers summary to Dispatch. Next run Monday Apr 27.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Fully automated — next run Monday 8 AM.
+      Fully automated — next run Monday Apr 27 at 8 AM.
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Schedule</span>Mondays 8 AM</div>
-      <div class="meta-item"><span>Delivery</span>Dispatch</div>
+      <div class="meta-item"><span>Next Run</span>2026-04-27</div>
       <div class="meta-item"><span>Task</span>weekly-inbox-triage</div>
     </div>
   </div>
@@ -205,10 +209,10 @@
       <div class="project-name">Messaging Automation</div>
       <div class="status-badge badge-stale">Stale</div>
     </div>
-    <div class="card-focus">No scope defined. Project space exists but no agent tasks have run and no platforms or workflows identified.</div>
+    <div class="card-focus">No scope defined. Project space exists but no platforms or workflows identified and no agent tasks have run.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Define what messaging workflows to automate and on which platforms (Slack, Gmail, iMessage, etc.).
+      Define what messaging workflows to automate — pick one platform (Slack, Gmail, iMessage) and one recurring task.
     </div>
     <div class="card-meta">
       <div class="meta-item"><span>Last Activity</span>Never</div>
@@ -222,14 +226,15 @@
       <div class="project-name">CMIT</div>
       <div class="status-badge badge-stale">Stale</div>
     </div>
-    <div class="card-focus">No objectives or activity logged. Folder exists under Projects/CMIT but project needs definition.</div>
+    <div class="card-focus">Certification prep project. 14-day prep course document exists in Education folder — no study sessions logged yet. Last file activity: 2026-03-28.</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Add a brief description of what CMIT involves so Mission Control can track it properly.
+      Open <code style="background:#2e2b6e;padding:1px 4px;border-radius:3px;font-size:11px">CMIT_14Day_Prep_Course.docx</code> and complete Day 1; log progress in STATUS.md.
     </div>
     <div class="card-meta">
-      <div class="meta-item"><span>Last Activity</span>Never</div>
-      <div class="meta-item"><span>Days Idle</span>—</div>
+      <div class="meta-item"><span>Last File Activity</span>2026-03-28</div>
+      <div class="meta-item"><span>Sessions Logged</span>0</div>
+      <div class="meta-item"><span>Resource</span>Education/CMIT_14Day_Prep_Course.docx</div>
     </div>
   </div>
 
@@ -239,14 +244,14 @@
       <div class="project-name">Doc Comparison</div>
       <div class="status-badge badge-stale">Stale</div>
     </div>
-    <div class="card-focus">No objectives or activity logged. Unclear if this is a one-time task or an ongoing workflow.</div>
+    <div class="card-focus">Working directory contains Project Cosmos IFC PDFs (V1 vs V2), change narrative .docx, and spec_revision_tracker.html. Scope not yet defined — one-time task or ongoing workflow?</div>
     <div class="card-next">
       <strong>Next Action</strong>
-      Clarify scope — what documents need comparison and whether this is recurring or complete.
+      Clarify scope — are the Cosmos IFC V1/V2 PDFs ready for comparison? Define desired output and whether this is recurring.
     </div>
     <div class="card-meta">
-      <div class="meta-item"><span>Last Activity</span>Never</div>
-      <div class="meta-item"><span>Days Idle</span>—</div>
+      <div class="meta-item"><span>Last File Activity</span>2026-04-19</div>
+      <div class="meta-item"><span>Days Without Action Plan</span>4</div>
     </div>
   </div>
 
