@@ -1,7 +1,7 @@
 ---
 project: Doc Comparison
 status: STALE
-last_updated: 2026-04-22
+last_updated: 2026-04-23
 owner: Connor Kay
 ---
 
@@ -26,4 +26,4 @@ No activity logged yet.
 ## Notes
 - Working directory: `~/Documents/Claude/Projects/Doc Comparrison` (note typo: double-r)
 - Contains Project Cosmos IFC PDFs (V1 vs V2), a change narrative .docx, and a spec_revision_tracker.html
-- No-activity days since last meaningful update: 2
+- No-activity days since last meaningful update: 3

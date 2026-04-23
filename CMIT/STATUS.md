@@ -2,7 +2,7 @@
 project: CMIT
 status: STALE
 priority: low
-last_updated: 2026-04-22
+last_updated: 2026-04-23
 owner: Connor Kay
 tags: [study, certification]
 ---
@@ -27,4 +27,4 @@ No study sessions logged yet.
 
 ## Notes
 - Resource: `~/Documents/Claude/Projects/CMIT/Education/CMIT_14Day_Prep_Course.docx`
-- No-activity days since initial setup: 1 (as of 2026-04-22)
+- No-activity days since initial setup: 2 (as of 2026-04-22)
